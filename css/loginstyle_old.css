@@ -1,0 +1,561 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+}
+@font-face {
+    font-family: 'sinhala_mnregular';
+    src: url('../fonts/sinhalamn-webfont.eot');
+    src: url('../fonts/sinhalamn-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/sinhalamn-webfont.woff2') format('woff2'), 
+         url('../fonts/sinhalamn-webfont.woff') format('woff'), 
+         url('../fonts/sinhalamn-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'sinhala_mnregular'!important;
+    overflow: auto;
+}
+
+#wrapper    { min-height:100%; position:relative; }
+#header     { background:transparent;}
+#content    { padding-bottom:186px; /* Height of the footer element */ }
+#footer     { width:100%; height:186px; position:absolute; text-align: center; background: #BD2325; bottom:0; left:0; }
+
+#footer img {
+    max-width: 100%;
+}
+#footer #advantage{
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    padding-right: 80px;
+}
+#header img{
+    width: 300px;
+    max-width:40%;
+}
+/*
+@media only screen and (max-width: 992px) {
+    div#header img{ 
+        width: 40%;
+    }
+    div.jumbotron{
+        background-color: red;
+    }
+}
+*/
+.ribbon.one {
+    height: 10px;
+    background: linear-gradient(to right, #f39100, #be1320);
+    /* Standard syntax */
+    background: -webkit-linear-gradient(left, #f39100, #be1320);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left, #f39100, #be1320);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left, #f39100, #be1320);
+    /* For Firefox 3.6 to 15 */
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.jumbotron {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    height: 30%;
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    background-color: transparent;
+    color: rgba(201, 48, 44, 1);
+    border: none;
+    display: table;
+}
+.container.jumbo {
+    height: 100%;
+    width: 100%;
+}
+div.container.jumbo.jumboClose{
+    display: table-cell;
+    vertical-align: bottom;
+    height: 100%;
+    
+}
+div.container.jumbo.jumboClose h1{
+    padding-bottom: 0;
+    font-size: 10vh;
+}
+h1.text{
+    display: block;
+    /*padding: 11vh 0;*/
+    margin: 0;
+    text-align: center;
+    font-size: 15vh;
+    margin-top: 45px;
+}
+h1 img{
+    height: 1%;
+    width: 1%;
+    margin-left: -3%;
+    margin-bottom: 10%;
+}
+h1 img{
+    width: 10%;
+    max-height:20%;
+    text-align: center;
+    border: none;
+}
+.container ul {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.container li {
+    list-style-type: none;
+}
+.col-md-6 {
+    width: 100%; 
+}
+form {
+    clear: both;
+}
+#formContainer{
+    /*padding-bottom: 15vh;*/
+}
+form.registerForm,
+form.signinForm {
+    display: none;
+    text-align: left;
+}
+form.signinForm{
+    margin-bottom: 20px;
+}
+form.registerForm input,
+form.registerForm select,
+div.sndtinput, 
+form.signinForm input{
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: left;
+    padding-left: 3px;
+    border-radius: 2px;
+    height: 30px;
+    font-size: 20px;
+}
+form.registerForm select{
+    padding: 0 !important;
+}
+label.error{
+    margin-bottom: 0;
+    color: red;
+    display: block;
+}
+.Register label{
+    font-family: Arial;
+    width: 75%;
+    margin-left: 24%;
+    font-style: italic;
+    font-weight: lighter;
+}
+.signinForm label.error{
+    margin-left: 1%;
+    font-family: Arial;
+    font-style: italic;
+    font-weight: lighter;
+}
+#hearother,#college,#countryo{
+    display: none;
+}
+input,
+input::-webkit-input-placeholder {
+    font-size: 20px;
+}
+form input[type=submit] {
+    font-size: 25px;
+    height: 50px;
+    line-height: 25px;
+    border:none;
+    background-color: #bd2325;
+    color: white;
+    margin-bottom: 20px;
+}
+#RegisterSubmit{
+    margin-bottom: 20px;
+}
+a#forgot{
+    margin-left: 1%;
+    font-size: 16px;
+}
+form input[type=submit]:hover {
+    background-color: rgba(51, 51, 51, 0.2);
+    color: rgba(201, 48, 44, 1);    
+}
+.btn {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    color: rgba(51, 51, 51, 0.6);
+    font-size: 40px;
+}
+a.btn:link,
+a.btn.link {
+    color: rgba(51, 51, 51, 0.6);
+    border-top: none;
+    box-shadow: none;
+}
+a.btn:visited,
+a.btn.visited {
+    color: rgba(51, 51, 51, 0.6);
+    border-top: none;
+    box-shadow: none;
+}
+a.btn:hover {
+    color: rgba(201, 48, 44, 1);
+    border-top: none;
+    box-shadow: none;
+}
+
+a.btn:active,
+a.btn.active {
+    color: rgba(51, 51, 51, 0.6);
+    border-top: none;
+    box-shadow: none;
+}
+a.btn.selected{
+    border-bottom-color: rgba(201, 48, 44, 1); 
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    border-radius: 3.5px;
+    color: rgba(201, 48, 44, 1); 
+}
+.jumbotron.open{
+    opacity: 0.5;
+    
+}
+#RegisterSubmit,#SignSubmit{
+    text-align: center !important;
+}
+#RegisterSubmit:hover,#SignSubmit:hover{
+    color: white !important;
+    background-color: rgba(189, 35, 37, 0.9);
+}
+#carousel-talerang{
+    height: 54vh;
+    color: #bd2325 !important;
+    /*border-bottom: solid 1px black;*/
+}
+#no1{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('../img/IMG_4721.jpg') no-repeat;
+}
+#no2{
+/*        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.65) 100%), url('../img/wrap.jpg') no-repeat;
+*/        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.65) 100%), url('../img/unspecified2.jpg') no-repeat;
+}
+#no3{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.65) 100%), url('../img/picture1.jpg') no-repeat;
+/*        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.65) 100%), url('../img/mockinterviews.jpg') no-repeat;*/
+}
+#no4{
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.35) 70%, rgba(0, 0, 0, 0.65) 100%), url('../img/mentorship.jpg') no-repeat;
+}
+#no2,#no1,#no3,#no4{
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+    background-overflow: hidden;
+    height: 54vh;
+}
+#carousel-talerang .carousel-control{
+    background: none; 
+    width: 5%;
+}
+.carousel-indicators{
+    width: initial;
+    margin: 0 20px 0 0;
+    right: 0;
+    left: initial;
+}
+.carousel-indicators li.active {
+    background-color: #f39100 !important;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+.carousel-indicators li{
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: white;
+    border: none;
+}
+.carousel-indicators li:hover{
+    background-color: #bd2325;
+}
+.carousel-caption {
+    right: 10%;
+    left: 10%;
+    padding: 0;
+    text-align: left;
+    font-size: 42px;
+    color: #bd1325;
+    font-weight: bold;
+}
+.notif{
+    color: red !important;
+    text-align: center !important;
+    font-size: 24px !important;
+}
+.notif.success{
+    color: green !important;
+}
+.notif.fail{
+    color: red !important;
+}
+div#explainer{
+    text-align: center;
+    font-size: 32px;
+    transition: all .2s ease-in-out;
+}
+div#explainer:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+div#explainer a{
+    color: white;
+    font-weight: lighter;
+    text-decoration: none;
+}
+div#explainer a:hover{
+    text-decoration: none;
+}
+div#explainer a:focus{
+    outline: 0;
+}
+/************************************MEDIA QUERIES******************************/
+
+@media (min-width: 768px) {
+    .jumbotron h1 {
+        font-size: 15vh;
+    }
+}
+
+@media (max-width: 457px) {
+    h1 img{
+    height: 3%;
+    width: 6%;
+    margin-left: -3%;
+    margin-bottom: 15%;
+    }
+}
+@media (max-width: 680px){
+    #forgotp{
+        margin: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 680px) {
+    form.registerForm input,
+    form.registerForm select,
+    div.sndtinput{
+        width: 75%;
+        margin-left: 24%;
+        margin-right: 0%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: left;
+        padding-left: 4px;
+    }
+    form.signinForm input {
+        width: 75%;
+        margin-left: 1%;
+        margin-right: 0;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: left;
+        padding-left: 4px;
+    }
+    a#myRegisterButton {
+        margin-left:0;
+        margin-right: 0;
+        padding-right: 0;
+        text-align: right;
+        padding-top: 0;
+    }
+    a#mySignInButton {
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+        padding-top: 0;
+    }
+    #myRegisterButton, #mySignInButton{
+        width: 77%;
+    }
+    div.col-md-6 {
+        padding-top: 0;
+        width: 50%;
+        float: left;
+        overflow: hidden;
+    }
+    div.col-md-6.signIn ul {
+        padding: 1%;
+        text-align: left;
+    }
+    div.col-md-6.Register ul {
+        padding: 1%;
+        text-align: right;
+    }
+}
+
+@media (min-width:680px) and (max-width: 992px) {
+    
+    form.registerForm input,
+    form.registerForm select,
+    div.sndtinput{
+        width: 95%;
+        margin-left: 4%;
+        margin-right: 0%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: left;
+        padding-left: 4px;
+    }
+    form.signinForm input {
+        width: 95%;
+        margin-left: 1%;
+        margin-right: 0;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        text-align: left;
+        padding-left: 4px;
+    }
+    #myRegisterButton, #mySignInButton{
+        width: 97%;
+    }
+}
+@media (max-width:680px) and (min-width:0px) {
+    #forgotp{
+        margin: 0;
+        text-align: center;
+    }
+}
+@media (min-width: 982px) {
+
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    #content{
+        padding-bottom: 177px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer .container{
+        float: left;
+        width: 100%;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 155px;
+    }
+    #footer #advantage{
+        font-size: 16px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #content{
+        padding-bottom: 138px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer .container{
+        float: left;
+        width: 100%;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 116px;
+    }
+    #footer #advantage{
+        font-size: 16px;
+    }
+    .carousel-caption{
+        font-size: 32px;
+        margin-bottom: 20px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #content{
+        padding-bottom: 91px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer .container{
+        float: left;
+        width: 100%;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 69px;
+    }
+    #footer #advantage{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 10vh;
+    }
+    .carousel-caption{
+        font-size: 28px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #content{
+        padding-bottom: ;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer .container{
+        float: left;
+        width: 100%;
+    }
+    #footer img{
+        max-width: 100%;
+        height: ;
+    }
+    #footer #advantage{
+        font-size: 12px;
+    }
+    h1.text{
+        font-size: 9vh;
+    }
+    div#explainer{
+        font-size: 26px;
+    }
+    #carousel-talerang .carousel-control {
+        width: 15%;
+    }
+    .carousel-caption{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+}

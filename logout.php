@@ -1,0 +1,9 @@
+<?php 
+session_start();
+unset($_SESSION['useremail']);
+unset($_SESSION['firstname']);
+unset($_SESSION['lastname']);
+unset($_SESSION['sndtprogram']);
+unset($_SESSION['accountno']);
+header('location:index.php');
+?>

@@ -1,0 +1,202 @@
+.quiz-step {
+    display: none;
+}
+.quiz-step.start{
+	padding-top: 250px;
+	margin-top: 20px;
+	min-height: 400px;
+	background: url(../img/genz/Generation-Z-students-with-devices_Feature_1290x688_MS.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	color: white;
+	text-align: center;
+	font-weight: bolder;
+	font-size: 30px;
+}
+.quiz-step.step0 p{
+	background: rgba(255,255,255,0.7);
+    color: black;
+    font-weight: 300;
+    border-radius: 10px;
+    border: solid 2px;
+    max-width: 400px;
+    display: inline-block;
+    padding: 0 10px;
+}
+.quiz-step.start label{
+	font-size: 28px;
+}
+.no-bullet{
+	list-style-type: none;
+}
+div.answer-step{
+	margin-top: 40px;
+	text-align: center;
+}
+div.answer-desc{
+	margin: 20px 0;
+	border: solid 2px black;
+	border-left: 0;
+	border-right: 0;
+}
+input[type="radio"]{
+	display: none;
+}
+ul{
+	margin-left: 0;
+	padding-left: 0;
+}
+ul.answers label{
+    text-align: center;
+    border: solid 2px #bd2325;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+}
+ul.answers label:hover{
+    background: #bd2325;
+    color: white;
+    -webkit-transition-duration: 0.4s;
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+.image-options img{
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	width: 200px;
+	margin-top: 20px;    
+	border-radius: 15px;
+}
+.image-options img:hover{
+	-webkit-transform: scale(1.15);
+	-moz-transform: scale(1.15);
+	-o-transform: scale(1.15);
+	transform: scale(1.15);
+}
+.image-options label{
+	border: none !important;
+	border-radius: none !important;
+}
+.image-options label:hover{
+	border: none !important;
+	border-radius: none !important;
+	background: none !important;
+	color: black !important;
+}
+.image-caption{
+	margin-top: 15px;
+}
+label.dummy{
+	text-align: center;
+    border: solid 2px #bd2325;
+    width: 200px;
+    max-width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+	background: #bd2325;
+    color: white;
+}
+li.col-md-6,li.col-md-12{
+	padding-right: 5px;
+	padding-left: 5px;
+}
+h2.question-title{
+    text-transform: none;
+    text-align: center;
+    font-size: 42px;
+    margin: 10px 0;
+}
+#quizgiven{
+	margin-top: 20px;
+}
+div#timerouter{
+	text-align: center;
+}
+div#timer{
+	padding: 0 10px;
+	border: solid 2px #bd2325;
+	background-color: #bd2325;
+	color: white;
+	display: inline-block;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+div#results{
+	text-align: center;
+	margin-top: 30px;
+}
+#results p{
+	margin-top: 20px;
+}
+#results div{
+	color: #bd2325;
+}
+#results #workforce{
+	color: black;
+	font-weight: bolder;
+}
+.question-title.score-title{
+	color: black;
+	font-weight: bolder;
+}
+#timerclock{
+	
+
+}
+div#qno{
+	text-align: center;
+}
+
+.btn-facebook{color:#fff;background-color:#3b5998;border-color:rgba(0,0,0,0.2)}.btn-facebook:focus,.btn-facebook.focus{color:#fff;background-color:#2d4373;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:hover{color:#fff;background-color:#2d4373;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open>.dropdown-toggle.btn-facebook{color:#fff;background-color:#2d4373;border-color:rgba(0,0,0,0.2)}.btn-facebook:active:hover,.btn-facebook.active:hover,.open>.dropdown-toggle.btn-facebook:hover,.btn-facebook:active:focus,.btn-facebook.active:focus,.open>.dropdown-toggle.btn-facebook:focus,.btn-facebook:active.focus,.btn-facebook.active.focus,.open>.dropdown-toggle.btn-facebook.focus{color:#fff;background-color:#23345a;border-color:rgba(0,0,0,0.2)}
+.btn-facebook:active,.btn-facebook.active,.open>.dropdown-toggle.btn-facebook{background-image:none}
+.btn-facebook.disabled:hover,.btn-facebook[disabled]:hover,fieldset[disabled] .btn-facebook:hover,.btn-facebook.disabled:focus,.btn-facebook[disabled]:focus,fieldset[disabled] .btn-facebook:focus,.btn-facebook.disabled.focus,.btn-facebook[disabled].focus,fieldset[disabled] .btn-facebook.focus{background-color:#3b5998;border-color:rgba(0,0,0,0.2)}
+.btn-facebook .badge{color:#3b5998;background-color:#fff}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.image-options img{
+		width: 180px;
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	h2.question-title{
+		font-size: 36px;
+	}
+	.image-options img{
+		width: 150px;
+	}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+	h2.question-title{
+		font-size: 32px;
+	}
+	.image-options img{
+		width: 120px;
+	}
+	.quiz-step.start{
+		padding-top: 25px;
+	    min-height: 200px;
+	    background: url(../img/genz/Generation-Z-students-with-devices_Feature_1290x688_MS.jpg);
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: contain;
+	    color: white;
+	    text-align: center;
+	    font-weight: bolder;
+	    font-size: 22px;
+	}
+}

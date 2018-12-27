@@ -1,0 +1,229 @@
+@font-face {
+	font-family: 'sinhala_mnregular';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../fonts/sinhalamn-webfont.eot');
+	src: url('../fonts/sinhalamn-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/sinhalamn-webfont.woff2') format('woff2'),
+	url('../fonts/sinhalamn-webfont.woff') format('woff'),
+	url('../fonts/sinhalamn-webfont.ttf') format('truetype');
+}
+
+#wrapper { 
+	min-height:100%; 
+	position:relative; 
+	font-family: sinhala_mnregular;
+}
+#header { 
+	background:white; 
+	padding:10px; 
+}
+#header a{
+	margin-top: 20px;
+	padding: 4px;
+	font-size: 24px; 
+    font-family: sinhala_mnregular;
+    text-transform: uppercase;
+    color: white;
+    border: solid 1px #b71925;
+    background-color: #bd2325;
+    float: right;
+    border-radius: 5px;
+}
+#header a:hover{
+	text-decoration: none;
+	background-color: rgba(189, 35, 37, 0.8);
+}
+#content {
+	padding-top: 10px; 
+	padding-bottom:196px; /* Height of the footer element */ 
+}
+#footer { 
+	width:100%; 
+	height:187px; 
+	position:absolute; 
+	text-align: center; 
+	background: #BD2325; 
+	bottom:0; 
+	left:0;
+}
+#footer img {
+    max-width: 100%;
+}
+#footer #advantage{
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    padding-right: 80px;
+}
+input.xldl{
+	font-size: 20px;
+}
+.glyphicon
+{
+	vertical-align: sub;
+    padding-right: 9px;
+}
+form{
+	display: inline-block;
+	margin-right: 3px;
+    margin-bottom: 0;
+}
+#notsignedin{
+	margin-top: 30px;
+	font-size: 30px;
+}
+.lifevis{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.list-group{
+    border: solid 2px #bd2325;
+    border-radius: 4px;
+    -webkit-box-shadow: 7px 7px 17px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 17px -8px rgba(0,0,0,0.75);
+    box-shadow: 7px 7px 17px -8px rgba(0,0,0,0.75);
+    background-color: white;
+}
+.list-group-item{
+    border: none;
+    transition: all 0.4s;
+}
+.list-group-item:hover{
+    background-color: #f5f5f5;
+}
+.list-group-item-heading{
+    text-decoration: underline;
+}
+.list-group-item-text{
+    color: #757575;
+}
+#admin{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 42px;
+    font-style: italic;
+    font-weight: bold;
+}
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.btn-group-lg>.btn, .btn-lg{
+    margin-bottom: 5px;
+}
+/**************************TABLE STYLES**************************/
+.rTable { 
+    display: table; 
+    width: 99%; 
+    margin: 0 auto;
+    font-size: 20px;
+}
+.rTableRow { 
+    display: table-row; 
+    background: #bdbdbd;
+}
+.rTableRow .center{
+    text-align: center;
+}
+.rTableRow.evenRow{
+    background: #f1f1f1;
+}
+.rTableBody { 
+    display: table-row-group; 
+}
+.rTableCell { 
+    display: table-cell; 
+    border: solid 1px white; 
+    border-right: 0;
+    border-bottom: 0;
+    padding: 5px;
+    vertical-align: middle;
+}
+.rTableCell.blank{
+    background-color: white;
+}
+.rTableHead { 
+    display: table-cell; 
+    border: solid 1px white; 
+    border-right: 0;
+    border-bottom: 0;
+    padding: 5px;
+    background-color: #bd2325;
+    vertical-align: middle; 
+    color: white;
+    font-weight: lighter;
+}
+.center.blank{
+    text-decoration: underline;
+}
+/******************************TABLE STYLES*******************************/
+/******************************MEDIA QUERIES******************************/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    #page-wrap{
+        padding-bottom: 177px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 155px;
+    }
+    #footer #advantage{
+        font-size: 16px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #page-wrap{
+        padding-bottom: 138px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 116px;
+    }
+    #footer #advantage{
+        font-size: 16px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #page-wrap{
+        padding-bottom: 91px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 69px;
+    }
+    #footer #advantage{
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #page-wrap{
+        padding-bottom: ;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: ;
+    }
+    #footer #advantage{
+        font-size: 12px;
+    }
+}
+/******************************MEDIA QUERIES******************************/

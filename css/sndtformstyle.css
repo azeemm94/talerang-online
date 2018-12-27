@@ -1,0 +1,173 @@
+@font-face {
+    font-family: 'sinhala_mnregular';
+    src: url('../fonts/sinhalamn-webfont.eot');
+    src: url('../fonts/sinhalamn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sinhalamn-webfont.woff2') format('woff2'),
+         url('../fonts/sinhalamn-webfont.woff') format('woff'),
+         url('../fonts/sinhalamn-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+body{ 
+	font-family: 'sinhala_mnregular'!important; 
+}
+#wrapper { 
+	min-height:100%; 
+	position:relative; 
+}
+#content { 
+    padding-top: 0px;
+	padding-bottom:196px; /* Height of the footer element */ 
+    padding-left:0; 
+    padding-right:0; 
+}
+#footer { 
+	width:100%; 
+	height:187px; 
+	position:absolute; 
+	text-align: center; 
+	background: #BD2325; 
+	bottom:0; 
+	left:0;
+}
+.ribbon{
+    height: 50px;
+    background: linear-gradient(to right,#f39100,#be1320); /* Standard syntax */
+    background: -webkit-linear-gradient(left,#f39100,#be1320); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#f39100,#be1320); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#f39100,#be1320); /* For Firefox 3.6 to 15 */
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.ribbon #middle{
+    width: 100%;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+#nav-header{
+    background: transparent;
+    border: none;
+    padding-top: 0;
+}
+#footer img {
+    max-width: 100%;
+}
+#footer #advantage{
+    text-align: right;
+    color: white;
+    font-size: 16px;
+    padding-right: 80px;
+}
+h1#title{
+    border-bottom: 1px solid #bd1321;
+    color: #222262;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 20px;
+    padding: 9px 0 15px;
+    text-transform: uppercase;
+}
+h1#title img {
+    vertical-align: text-top;
+    margin: -9px 0 0 -12px;
+    position: relative;
+    z-index: -1;
+}
+#reqdfields{
+    text-align: right;
+    color: red;
+    font-size: 18px;
+}
+.redstar{
+    color: red;
+    vertical-align: super;
+    margin-left: 4px;
+}
+form{
+	font-size: 20px;
+}
+.displaynone{
+	display: none;
+}
+.formfield{
+	margin-top: 10px;
+}
+.form-control{
+    font-size: 20px;
+}
+.input-group-addon{
+    font-size: 20px;
+}
+input[type="text"],input[type="password"],select{
+	width: 100%;
+    word-wrap:break-word;
+}
+textarea{
+	width: 100%;
+	height: 100px !important;
+    font-size: 20px !important;
+    line-height: 20px !important;
+}
+.col-md-6{
+/*	border: solid #aaa 1px;
+    background-color: #eee;*/
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.formfield.submit{
+	text-align: center;
+}
+input#submit{
+	width: 50%;
+    height: auto;
+    background-color: #bd2325 !important;
+    color: white;
+    font-size: 24px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 0 !important;
+}
+.error{
+	/*color: red;*/
+	border: solid 1px red;
+}
+.notif{
+    color: white;
+    font-size: 24px;
+    padding: 4px;
+    padding-left: 10px;
+}
+.notif.success{
+    background: #5cb85c;
+    border-left: solid 7px green;
+}
+.notif.fail{
+    background: #d9534f;
+    border-left: solid 7px #d43f3a;
+}
+label.error{
+    display: none;
+}
+label.error,span#email_status{
+	border: none;
+	color: red;
+	font-weight: lighter;
+	font-style: italic;
+}
+input[type=checkbox], input[type=radio] {
+    margin: -1px 2px 0 0;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 480px)
+{
+    h1#title{
+        font-size: 36px;
+    }
+}

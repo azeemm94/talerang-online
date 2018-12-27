@@ -1,0 +1,279 @@
+/*********************MOCK INTERVIEW PAGE*********************/
+.ribbon{
+    height: 50px;
+    background: linear-gradient(to right,#f39100,#be1320); /* Standard syntax */
+    background: -webkit-linear-gradient(left,#f39100,#be1320); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(left,#f39100,#be1320); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(left,#f39100,#be1320); /* For Firefox 3.6 to 15 */
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.ribbon #middle{
+    width: 100%;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+.mockpayform{
+    text-align: center;
+}
+.citrus{
+	margin-top: 20px;
+	padding: 4px;
+	margin-left: 5px;
+    font-family: sinhala_mnregular;
+    /*text-transform: uppercase;*/
+    color: white;
+    border: solid 1px #b71925;
+    background-color: #bd2325;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#quote{
+    background: #bd2325;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 26px;
+}
+div#intform{
+    margin-top: 20px;
+    text-align: center;
+}
+form#interview label{
+    border: solid #bd2325;
+    padding: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 30px;
+    min-width: 250px;
+}
+form#interview label:hover{
+    color: white;
+    background-color: #bd2325;
+    border: solid #bd2325 !important;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    -moz-transition-duration: 0.4s; /* Safari */
+    -o-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+form#interview input[type=radio]:checked + label {
+    color: white;
+    background-color: #bd2325;
+    border: solid #bd2325 !important;
+} 
+blockquote {
+    font-size: 28px;
+    font-style: italic;
+    /*width: 450px;*/
+    margin: 0.25em 0;
+    padding: 0.25em 40px;
+    line-height: 1.45;
+    position: relative;
+    color: white;
+    border:none;
+   /* background:#ececec;*/
+}
+blockquote:before,blockquote:after{
+    display: inline-block;
+    font-size: 80px;
+    position: relative;
+    color: white;
+    height: 0px;
+    width: 0;
+    vertical-align: top;
+}
+blockquote:before {
+    content: "\201C";
+    left: -55px;
+    top: -35px;
+}
+blockquote:after {
+    content: "\201D";
+    left: 100px;
+    top: -75px;
+}
+.desc{
+    margin-top: 20px;
+}
+.row {
+  overflow: hidden; 
+}
+.desc-col{
+    padding-right: 1px;
+    padding-left: 1px;
+    margin-bottom: 10px;
+}
+.desc-col ul{
+    margin-bottom: 0;
+}
+.desctitle{
+    color: white;
+    background-color: #27215b;
+    padding: 0 10px;
+}
+.descpara{
+    /*border:solid 1px #27215b;*/
+    padding: 0 10px;
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+    background-color: #c9c8d6;
+}
+#schedule{
+    text-align: center;
+}
+p.success{
+    background-color: #9c6;
+    color: white;
+    padding: 4px 10px;
+    display: inline-block;
+    border-left: 8px solid #558B2F;
+}
+#appointment{
+    display: inline-block;
+    margin-bottom: 25px;
+    background: #bd2325;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px 3px rgba(0,0,0,0.33);
+}
+#appointment a{
+    color: white!important;
+    padding: 4px 10px;
+    display: inline-block;
+}
+#appointment a:hover{
+    text-decoration: none;
+}
+#appointment a:focus{
+    text-decoration: none;
+}
+div.mocklink{
+    text-align: center;
+}
+div.mocklink div{
+    display: inline-block;
+    background-color:#bd2325;
+    border-radius: 4px;
+    /* padding: 7px; */
+}
+a.mocklink{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+}
+h3{
+    font-weight: bold;
+    text-decoration: underline;
+}
+form#mockform{
+    margin-top: 20px;
+}
+#mockform input.error{
+    border: solid 1px red;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(170,0,0,0.75);
+-moz-box-shadow: 2px 2px 6px 0px rgba(170,0,0,0.75);
+box-shadow: 2px 2px 6px 0px rgba(170,0,0,0.75);
+}
+#mockform textarea.error{
+    border: solid 1px red;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(170,0,0,0.75);
+-moz-box-shadow: 2px 2px 6px 0px rgba(170,0,0,0.75);
+box-shadow: 2px 2px 6px 0px rgba(170,0,0,0.75);
+}
+#mockform .marks{
+   /* width: 120px;*/
+    text-align: center;
+}
+label.error.marks{
+    display: none!important;
+}
+#mockform #msubmit{
+    border: none;
+    background-color: #bd2325;
+    color: white;
+    border-radius: 4px;
+    padding: 4px 15px;
+    min-width: 300px;
+    max-width: 100%;
+    margin-top: 20px;
+}
+#schedule{
+    margin-top: 30px;
+}
+textarea{
+    width: 700px;
+    height: 200px;
+    max-width: 100%;
+    font-size: 22px;
+    padding: 5px;
+    line-height: 22px;
+}
+input#mock-citrus{
+    background: #bd2325;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    padding: 5px 15px;
+}
+#mockform .form-control{
+    font-size: 20px;
+}
+#mockform select.form-control{
+    width: auto;
+}
+#mockform .form-control.marks{
+    width: 200px;
+    display: inline-block;
+}
+#mockform .form-control.contact{
+    width: 200px;
+    display: inline-block;
+}
+#mockform textarea.form-control{
+    width: 600px;
+    max-width: 100%;
+    height: 150px;
+}
+#mockform .fieldset{
+    margin-top: 20px;
+}
+#mockform input[type="radio"]{
+    box-shadow: none;
+}
+#mockform .fieldset.submit{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+/******************************MEDIA QUERIES******************************/
+@media only screen and (max-width: 540px){
+    blockquote:after{
+        left: 83px;
+        top: -117px;
+    }
+}
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #middle{
+        font-size: 30px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #middle{
+        font-size: 24px;
+    }
+}

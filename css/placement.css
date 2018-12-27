@@ -1,0 +1,77 @@
+.week {
+    border-radius: 10px;
+    padding: 8px 5px;
+    margin-top: 10px;
+    transition: all 0.3s; 
+}
+.week:hover{
+	-webkit-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.4);
+	box-shadow: 4px 4px 3px 0px rgba(0,0,0,0.4);
+}
+/*.week.unlocked{
+	background: #27215b;
+}
+.week.unlocked.alternate{
+	background: #bd2325;
+}*/
+.week.complete{
+    background: #27215b;
+}
+.week.incomplete{
+    background: #BD2325;
+}
+.week.grey-locked{
+    background: #eeeeee;
+}
+.week .title{
+    border-radius: 10px;
+    padding: 0 10px;
+    background: white;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    font-weight: bold;
+}
+.week .desc{
+	margin-top: 2px;
+    border-radius: 10px;
+    padding: 0 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background: white;
+    font-size: 20px;
+    /*padding-right: 25%;*/
+    padding-right: 15px;
+}
+.locked{
+	float: right;
+	display: inline-block;
+	color: #616161;
+	font-size: 22px;
+}
+span.glyphicon{
+    margin-top: 4px;
+    vertical-align: sub;
+}
+#citrus input{
+    margin: 5px 10px 5px 0;
+    color: white;
+    background: #bd2325;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+}
+#coupon input[type="submit"]{
+    margin: 5px 10px 5px 0;
+    color: white;
+    background: #bd2325;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    text-align: left;
+}
+@media screen and (max-width: 480px){
+	.week .desc{
+		padding-right: 0;
+	}
+}

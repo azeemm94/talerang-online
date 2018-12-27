@@ -1,0 +1,158 @@
+
+/**************************CHECKBOX AND RADIO BUTTON***********************************/
+input[type=checkbox]:not(old),
+input[type=radio   ]:not(old){
+/*  width     : 2em;*/
+    margin    : 0;
+    padding   : 0;
+    font-size : 1em;
+    opacity   : 0;
+}
+
+input[type=checkbox]:not(old) + label,
+input[type=radio   ]:not(old) + label{
+    display      : inline-block;
+    margin-left  : -2em;
+    line-height  : 1.5em;
+}
+
+input[type=checkbox]:not(old) + label > span{
+    display          : inline-block;
+    width            : 0.875em;
+    height           : 0.875em;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 0.0625em solid rgb(192,192,192);
+    border-radius    : 0.05em;
+    background       : rgb(224,224,224);
+    background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    vertical-align   : middle;
+}
+
+input[type=radio   ]:not(old) + label > span{
+    display          : inline-block;
+    width            : 0.875em;
+    height           : 0.875em;
+    margin           : 0.25em 0.5em 0.25em 0.25em;
+    border           : 0.0625em solid rgb(192,192,192);
+    border-radius    : 0.4em;
+    background       : rgb(224,224,224);
+    background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+    vertical-align   : middle;
+}
+
+input[type=checkbox]:not(old):checked + label > span,
+input[type=radio   ]:not(old):checked + label > span{
+    background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+    background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+    background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+    background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+    background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+
+input[type=checkbox]:not(old):checked + label > span:before{
+    content     : '✓'; 
+    display     : block;
+    width       : 1em;
+    color       : rgb(153,204,102);
+    font-size   : 0.875em;
+    line-height : 1em;
+    text-align  : center;
+    text-shadow : 0 0 0.0714em rgb(115,153,77);
+    font-weight : bold;
+}
+
+input[type=radio]:not(old):checked + label > span > span{
+    display          : block;
+    width            : 0.5em;
+    height           : 0.5em;
+    margin           : 0.125em;
+    border           : 0.0625em solid rgb(115,153,77);
+    border-radius    : 0.4em;
+    background       : rgb(153,204,102);
+    background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+    background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+    background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+    background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+    background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1199px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px) {
+    #middle{
+        font-size: 22px;
+    }
+    #talquiz .tab-pane li{
+        margin-left: 40px;
+        font-size: 22px;
+    }
+    #talquiz .tab-pane li.Question{
+        margin-left: 0;
+        font-size: 26px;
+    }
+    #talquiz .tab-pane .scenario h4{
+        margin-left: 0;
+        font-size: 26px;
+    }
+    #talquiz .tab-pane li.Question h4{
+        margin-left: 0;
+        text-align: center;
+    }
+    #talquiz .tab-pane button, #submit{
+        font-size: 26px;
+    }
+    #talquiz .sortable li{
+        margin-left: 0;
+    }
+    br.tab-break{
+        display: none;
+    }
+    #mytabs.nav.nav-tabs li a {
+        height: 28px;
+        min-height: initial;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 479px) {
+    #middle{
+        font-size: 18px;
+    }
+    #talquiz .tab-pane li{
+        margin-left: 40px;
+        font-size: 20px;
+    }
+    #talquiz .tab-pane li.Question{
+        margin-left: 0;
+        font-size: 24px;
+    }
+    #talquiz .tab-pane li.Question h4{
+        margin-left: 0;
+        text-align: center;
+        font-size: 24px;
+    }
+    #talquiz .tab-pane button, #submit{
+        font-size: 24px;
+    }
+    #talquiz .sortable li{
+        margin-left: 0;
+    }
+}

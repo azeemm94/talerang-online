@@ -1,0 +1,141 @@
+form .instructions{
+	color:#a1a1a1;
+	font-size: 20px;
+}
+#fileToUpload{ 
+	padding: 5px 5px 3px;
+	border: solid #ddd 1px;
+	width: 450px;
+	max-width: 100%;
+	font-size: 20px;
+	border-radius: 4px;
+}
+.notif.success{
+    color: white !important;
+    margin-top: 15px;
+    font-size: 24px;
+    padding: 4px;
+    padding-left: 10px;
+    background: #5cb85c;
+    border-left: solid 7px green;
+}
+.alert.alert-warning{
+	margin-top: 15px;
+}
+h4{
+	margin-left: 0;
+	margin-bottom: 0;
+}
+form#reference p.form-heading,form#resumeUpload p.form-heading, form#video p.form-heading{
+	text-decoration: underline;
+}
+input.form-control{
+	width: 400px;
+	max-width: 100%;
+	margin-bottom: 4px;
+	font-size: 18px;
+	display: inline-block;
+}
+input.error{
+	border: solid red 1px;
+}
+input[type="file"]{
+	display: inline-block;
+}
+input[type="submit"]{
+	background: #bd2535;
+    margin-top: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+form#video input[type="text"]{
+	width: 500px;
+}
+input#submitref{
+    width: 400px;
+    max-width: 100%;
+}
+input#file-submit{
+	padding: 5px 5px 3px;
+}
+div.form-panel{
+	border: solid 1px #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.form-panel h4 {
+    font-weight: bolder;
+    font-size: 32px;
+    text-decoration: underline;
+}
+div.industrylock{
+	font-size: 20px;
+}
+div.industryimg{
+	text-align: center;
+	margin-bottom: 10px;
+}
+div.industryimg img{
+	max-width: 100%;
+	border-radius: 5px;
+}
+.alert.alert-success{
+	margin-bottom: 0;
+}
+#corporate-partners div.industry-partner{
+	border: solid 1px #ddd;
+	margin: 0 2px;
+	text-align: center;
+}
+#corporate-partners h1{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+img.connectlogo{
+	max-width: 100%;
+	/* max-height: 100%; */
+	height: 94px;
+}
+@media only screen and (max-width:991px)  {
+	.industrylock{
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	img.connectlogo{
+	max-height: 100%;
+	height: auto;
+	}
+	#corporate-partners{
+		margin-bottom: 20px;
+	}
+	#corporate-partners .row{
+		margin-bottom: 0;
+	}
+	#corporate-partners .col-sm-4, #corporate-partners .col-xs-4{
+		margin-bottom: 8px;
+		padding-left: 2px;
+		padding-right: 2px;
+	}
+}
+@media only screen and (max-width:480px)  {
+	img.connectlogo{
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	}
+	#corporate-partners h1{
+		margin-top: 0;
+		font-size: 34px;
+	}
+	#corporate-partners .row{
+		margin-bottom: 0;
+	}
+	#corporate-partners .col-sm-4, #corporate-partners .col-xs-4{
+		margin-bottom: 4px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

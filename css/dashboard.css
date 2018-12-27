@@ -1,0 +1,241 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+.skillbar {
+  font-family: 'Open Sans', 'sans-serif';
+  	width:100%;
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	background:#eee !important;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+	-webkit-box-shadow: 4px 4px 6px -2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 4px 4px 6px -2px rgba(0,0,0,0.75);
+	box-shadow: 4px 4px 6px -2px rgba(0,0,0,0.75);
+}
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	font-weight:bold;
+	font-size:13px;
+	color:white !important;
+	background:#6adcfa;
+	background: rgba(0, 0, 0, 0.75) !important;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	width: 30%; /*width of section title */
+}
+.skillbar-title span {
+	display:block;
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	color: white !important;
+}
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	max-width: 60%; /*width of bar for percentage*/
+	position: absolute;
+	left: 30%; /*same as width of title*/
+	background: #99cc66 !important;
+	border-radius:0;
+}
+.skill-bar-percent {
+	position:absolute;
+	background: rgba(0, 0, 0, 0.75) !important;
+	right:0;
+	top:0;
+	width: 10%; /*width of percentage*/
+	text-align: center;
+	font-size:18px;
+	height:35px;
+	line-height:35px;
+	color:white !important;
+	font-weight: 800;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+#results{
+	list-style-type: none;
+	padding: 0;
+	margin-top: 20px;
+}
+.skillbar-bar.green{
+	background-color: #99cc66 !important;
+}
+.skillbar-bar.yellow{
+	background-color: #ec971f !important;
+}
+.skillbar-bar.red{
+	background-color: #ce4440 !important;
+}
+.container-fluid.dash-section{
+	padding: 0px;
+}
+div.section-title{
+	background: #bd2325;
+	color: white !important;
+	text-transform: uppercase;
+	padding: 30px;
+	font-size: 26px;
+}
+div.section-buttons{
+	background-color: #eeeeee;
+	padding: 5px 10px;
+}
+.tab-content{
+	margin-bottom: 0;
+}
+
+#schedule{
+    text-align: center;
+    margin-top: 20px;
+}
+#appointment{
+    display: inline-block;
+    margin-bottom: 25px;
+    background: #bd2325;
+    padding: 4px 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px 3px rgba(0,0,0,0.33);
+}
+#appointment a{
+    color: white!important;
+}
+#appointment a:hover{
+    text-decoration: none;
+}
+#appointment a:focus{
+    text-decoration: none;
+}
+div.alt{
+	padding-top: 20px;
+}
+hr{
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+.ribbon{
+	margin-bottom: 5px;
+}
+#mytabs.nav.nav-tabs li a{
+	min-height: inherit;
+	padding: 10px 80px;
+	font-size: 24px !important;
+}
+div.feedback{
+	margin-top: 20px;
+}
+.print-button{
+	font-family: sinhala_mnregular;
+    color: white;
+    border: solid 1px;
+    background-color: #27215b;
+    border-radius: 5px;
+    text-transform: none;
+    border-color: #9fa8da;
+    margin: 0 !important;
+    width: auto !important;
+    height: auto !important;
+    font-size: 24px !important;
+    line-height: inherit;
+    margin-left: 10px !important;
+}
+.tab-pane li{
+	margin-left: 0;
+}
+.col-md-3.skilltrk-img{
+	text-align: center;
+}
+.col-md-9.skilltrk-desc{
+	padding-top: 10px;
+}
+img.skilltrk-image{
+	max-width: 100%;
+	border-radius: 5px;
+	margin-top: 15px;
+}
+/************************MEDIA QUERIES************************/
+
+@media only screen and (min-width : 700px) {
+	div.skillbar{
+		display: block;
+	}
+	div.percentagealt{
+		display: none;
+	}
+}
+@media only screen and (max-width : 991px) {
+	#mytabs.nav.nav-tabs li a{
+		padding: 10px 20px;
+	}
+}
+@media only screen and (max-width : 699px) {
+	div.skillbar{
+		display: none;
+	}
+	div.percentagealt{
+		display: block;
+		font-weight: bold;
+		font-size: 24px;
+	}
+	.nav.nav-tabs li{
+		width: 100%;
+	}
+	#mytabs.nav.nav-tabs li a{
+		padding: 10px 20px;
+	}
+	.nav.nav-tabs li a{
+		padding: 5px 0;
+	}
+	}
+@media only screen and (max-width : 990px) {
+	#print-button{
+		display: none;
+	}
+}
+
+@media only screen and (max-width : 678px) {
+	canvas#compareChart{
+		display: none !important;
+	}
+}
+@media print  
+{
+	#middle{
+		display: none;
+	}
+    div.skillbar{
+        page-break-inside: avoid;
+    }
+    .section-title{
+    	padding: 0px 0px 0px 10px !important;
+    	margin: 0;
+    }
+    canvas#compareChart{
+    	display: none !important;
+    }
+}

@@ -1,0 +1,55 @@
+@font-face {
+    font-family: 'Cookie-Regular';
+    src: url('../fonts/Cookie-Regular.eot');
+    src: url('../fonts/Cookie-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Cookie-Regular.woff2') format('woff2'),
+         url('../fonts/Cookie-Regular.woff') format('woff'),
+         url('../fonts/Cookie-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Arty Signature';
+    src: url('../fonts/ArtySignature.eot');
+    src: url('../fonts/ArtySignature.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ArtySignature.woff2') format('woff2'),
+         url('../fonts/ArtySignature.woff') format('woff'),
+         url('../fonts/ArtySignature.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+a#btn-convert-html2image{
+    background: #bd2325;
+	color: white;
+	padding: 5px 10px;
+	display: inline-block;
+	border-radius: 5px;
+}
+div#download-button{
+	text-align: center;
+    text-decoration: none;
+}
+div#download-button a{
+    cursor: pointer;
+    text-decoration: none;
+}
+div#download-button a:hover{
+    text-decoration: none;
+}
+canvas{
+	display: none;
+}
+div.certificate-con{
+	text-align: center;
+	padding: 30px;
+	margin-top: 20px;
+	background: #DADADA;
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    div.certificate-con{
+        background: white;
+    }
+}

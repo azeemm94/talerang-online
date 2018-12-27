@@ -1,0 +1,269 @@
+@font-face { font-family: 'sinhala_mnregular';
+			     src: url('../fonts/sinhalamn-webfont.eot');
+			     src: url('../fonts/sinhalamn-webfont.eot?#iefix') format('embedded-opentype'),
+			          url('../fonts/sinhalamn-webfont.woff2') format('woff2'),
+			          url('../fonts/sinhalamn-webfont.woff') format('woff'),
+			          url('../fonts/sinhalamn-webfont.ttf') format('truetype');
+			     font-weight: normal; font-style: normal; 
+			    }
+html,body {
+	font-family: 'sinhala_mnregular';
+	margin:0;
+	padding:0;
+	height:100%;
+}
+
+#wrapper { min-height:100%; position:relative; }
+#header { background:white; padding:10px; }
+#content { padding-top: 10px; padding-bottom:196px; /* Height of the footer element */ }
+#footer { width:100%; height:186px; position:absolute; text-align: center; background: #BD2325; bottom:0; left:0;}
+
+#header a#logout,a#back{
+	margin-top: 20px;
+	margin-left: 10px; 
+	padding: 4px;
+    font-family: sinhala_mnregular;
+    text-transform: uppercase;
+    color: white;
+    border: solid 1px #b71925;
+    background-color: #bd2325;
+    float: right;
+    border-radius: 5px;
+}
+#header a:hover{
+	text-decoration: none;
+	background-color: rgba(189, 35, 37, 0.8) !important;
+}
+#notsignedin{
+	margin-top: 30px;
+	font-size: 30px;
+}
+#update,#reset,#confirm{
+	margin: 5px 0;
+}
+#search{
+    margin-left: 20px;
+}
+a.prevnext{
+    color: white;
+    border: solid 1px #b71925;
+    border-radius: 4px;
+    background-color: #bd2325;
+    padding: 2px;
+}
+a.prevnext:hover{
+    text-decoration: none;
+    background-color: rgba(189,35,37,.8);
+}
+a#showall{
+    color: white;
+    border: solid 1px #b71925;
+    border-radius: 4px;
+    background-color: #bd2325;
+    padding: 6px;
+}
+a#showall:hover{
+    text-decoration: none;
+    background-color: rgba(189,35,37,.8);
+}
+.center{
+    text-align: center;
+}
+/**************************TABLE STYLES**************************/
+.rTable { 
+    display: table; 
+    width: 99%; 
+    margin: 0 auto;
+    font-size: 20px;
+    -webkit-box-shadow: 3px 3px 4px 1px rgba(0,0,0,0.6);
+    -moz-box-shadow: 3px 3px 4px 1px rgba(0,0,0,0.6);
+    box-shadow: 3px 3px 4px 1px rgba(0,0,0,0.6);
+}
+.rTableRow { 
+    display: table-row; 
+   /* background: linear-gradient(#eee 0%,white 20%,white 80%, #eee 100%);*/
+    background: #bdbdbd;
+}
+.rTableRow.evenRow{
+    background: #f1f1f1;
+}
+form.rTableRow:hover{
+    background-color: #ffcc99!important;
+}
+.rTableBody { 
+    display: table-row-group; 
+}
+.rTableCell { 
+    display: table-cell; 
+    border: solid 1px white; 
+    border-right: 0;
+    border-bottom: 0;
+    padding: 5px;
+    vertical-align: middle;
+}
+.rTableHead { 
+    display: table-cell; 
+    border-left: solid 1px white; 
+    padding: 5px;
+    background-color: #bd2325;
+    vertical-align: middle; 
+    color: white;
+    font-weight: lighter;
+}
+input[type="submit"]{
+	color: white;
+	border: solid 1px #b71925;
+	border-radius: 4px;
+    background-color: #bd2325;
+}
+.rTableCell input[type="submit"]{
+    width: 100%
+}
+input[type="submit"]:hover{
+	background-color: rgba(189, 35, 37, 0.8);
+}
+div#num{
+	margin-left: 20px;
+	display: inline-block;
+	margin-bottom: 0;
+}
+form#pages{
+	margin-right: 20px;
+	display: inline-block;
+	margin-bottom: 0;
+	float: right;
+}
+form#pages select{
+	width: 100px;
+}
+input.admin-input{
+    font-size: 20px;
+    width: 300px;
+    max-width: 100%;
+}
+a.dashboard-link{
+    color: white;
+    border: solid 1px #b71925;
+    border-radius: 4px;
+    background-color: #bd2325;
+    padding: 5px 6px;
+    text-decoration: none !important;
+}
+/*********************MOCK CONFIRM*********************/
+.ui-datepicker{
+    font-size: medium !important;
+}
+.ui-datepicker-header{
+    color: black !important;
+    background-color: #bd2325 !important;
+}
+.ui-widget-header .ui-datepicker-next .ui-icon {
+    background-image: url("../img/ui-icons_444444_256x240.png")!important;
+}
+.ui-widget-header .ui-datepicker-prev .ui-icon {
+    background-image: url("../img/ui-icons_555555_256x240.png")!important;
+}
+.ui-widget-header .ui-icon{
+    background-size: contain!important;
+    background-position: center center !important;
+}
+#datepicker{
+    width: 95%;
+}
+input.error,textarea.error,select.error{
+    border: solid 1px red;
+}
+textarea.disabled{
+    resize: vertical; 
+    width: 200px; 
+    height: 200px; 
+    padding: 0 3px;
+}
+.feedbackform textarea{
+    line-height: 18px;
+    font-size: 18px;
+}
+.feedbackform > input,select{
+    height: 34px;
+}
+#searchform{
+    display: inline-block;
+}
+div.rTableRow:hover{
+    background-color: #ffcc99!important;
+}
+a.reslink{
+    background: #bd2325;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 3px;
+    text-decoration: none !important;
+}
+/***************************MEDIA QUERIES***************************/
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    #page-wrap{
+        padding-bottom: 177px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 155px;
+    }
+    #footer #advantage{
+        font-size: 16px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    #page-wrap{
+        padding-bottom: 138px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 116px;
+    }
+    #footer #advantage{
+        font-size: 16px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    #page-wrap{
+        padding-bottom: 91px;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: 69px;
+    }
+    #footer #advantage{
+        font-size: 12px;
+    }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+    #page-wrap{
+        padding-bottom: ;
+    }
+    #footer{
+        height: auto;
+    }
+    #footer img{
+        max-width: 100%;
+        height: ;
+    }
+    #footer #advantage{
+        font-size: 12px;
+    }
+}

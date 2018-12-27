@@ -1,0 +1,9 @@
+{
+    "require": {
+        "phpoffice/phpword": "v0.13.*",
+        /*"tecnickcom/tcpdf": "*",
+        "mpdf/mpdf": "*",*/
+        "phpoffice/phpexcel": "*",
+        "phpmailer/phpmailer": "*"
+    }
+}
